@@ -23,11 +23,23 @@
     
     _titles = @[@"My bookmarks", @"Cool Architecture in Toronto", @"Best coffee shops for working", @"Startup ideas"];
     
+    
+    UIBarButtonItem *newButton = [[UIBarButtonItem alloc] initWithTitle:@"New" style:UIBarButtonItemStylePlain target:self action:@selector(newAction:)];
+    
+    self.navigationItem.rightBarButtonItem = newButton;
 }
 
 
 - (void) newAction:(id)sender {
-    // TODO: what happens when New is tapped
+    UIAlertController *actionSheet = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    [actionSheet addAction:[UIAlertAction actionWithTitle:@"New Bookmark" style:UIAlertActionStyleDefault handler:nil]];
+    
+    [actionSheet addAction:[UIAlertAction actionWithTitle:@"New List" style:UIAlertActionStyleDefault handler:nil]];
+    
+    [actionSheet addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil]];
+    
+    [self presentViewController:actionSheet animated:YES completion:nil];
+
 }
 
 - (void)didReceiveMemoryWarning {
