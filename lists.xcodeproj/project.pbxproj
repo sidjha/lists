@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		EB3D0F911C73018000C468FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3D0F901C73018000C468FC /* main.m */; };
 		EB3D0F941C73018000C468FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3D0F931C73018000C468FC /* AppDelegate.m */; };
-		EB3D0F971C73018000C468FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3D0F961C73018000C468FC /* ViewController.m */; };
 		EB3D0F9A1C73018000C468FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3D0F981C73018000C468FC /* Main.storyboard */; };
 		EB3D0F9C1C73018000C468FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3D0F9B1C73018000C468FC /* Assets.xcassets */; };
 		EB3D0F9F1C73018000C468FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3D0F9D1C73018000C468FC /* LaunchScreen.storyboard */; };
 		EB3D0FAA1C73018000C468FC /* listsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3D0FA91C73018000C468FC /* listsTests.m */; };
 		EB3D0FB51C73018100C468FC /* listsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3D0FB41C73018100C468FC /* listsUITests.m */; };
+		EBC5404C1C7E1A7E0038A645 /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC5404B1C7E1A7E0038A645 /* ListTableViewCell.m */; };
+		EBD224501C7D02A000BFB4A6 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD2244F1C7D02A000BFB4A6 /* HomeTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,6 @@
 		EB3D0F901C73018000C468FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB3D0F921C73018000C468FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB3D0F931C73018000C468FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EB3D0F951C73018000C468FC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EB3D0F961C73018000C468FC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EB3D0F991C73018000C468FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB3D0F9B1C73018000C468FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB3D0F9E1C73018000C468FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,10 @@
 		EB3D0FB01C73018100C468FC /* listsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = listsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3D0FB41C73018100C468FC /* listsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = listsUITests.m; sourceTree = "<group>"; };
 		EB3D0FB61C73018100C468FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC5404A1C7E1A7E0038A645 /* ListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
+		EBC5404B1C7E1A7E0038A645 /* ListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
+		EBD2244E1C7D02A000BFB4A6 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
+		EBD2244F1C7D02A000BFB4A6 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +104,13 @@
 		EB3D0F8E1C73018000C468FC /* lists */ = {
 			isa = PBXGroup;
 			children = (
+				EB3D0F981C73018000C468FC /* Main.storyboard */,
 				EB3D0F921C73018000C468FC /* AppDelegate.h */,
 				EB3D0F931C73018000C468FC /* AppDelegate.m */,
-				EB3D0F951C73018000C468FC /* ViewController.h */,
-				EB3D0F961C73018000C468FC /* ViewController.m */,
-				EB3D0F981C73018000C468FC /* Main.storyboard */,
+				EBD2244E1C7D02A000BFB4A6 /* HomeTableViewController.h */,
+				EBD2244F1C7D02A000BFB4A6 /* HomeTableViewController.m */,
+				EBC5404A1C7E1A7E0038A645 /* ListTableViewCell.h */,
+				EBC5404B1C7E1A7E0038A645 /* ListTableViewCell.m */,
 				EB3D0F9B1C73018000C468FC /* Assets.xcassets */,
 				EB3D0F9D1C73018000C468FC /* LaunchScreen.storyboard */,
 				EB3D0FA01C73018000C468FC /* Info.plist */,
@@ -270,7 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB3D0F971C73018000C468FC /* ViewController.m in Sources */,
+				EBD224501C7D02A000BFB4A6 /* HomeTableViewController.m in Sources */,
+				EBC5404C1C7E1A7E0038A645 /* ListTableViewCell.m in Sources */,
 				EB3D0F941C73018000C468FC /* AppDelegate.m in Sources */,
 				EB3D0F911C73018000C468FC /* main.m in Sources */,
 			);
@@ -496,6 +502,7 @@
 				EB3D0FBB1C73018100C468FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB3D0FBC1C73018100C468FC /* Build configuration list for PBXNativeTarget "listsTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +511,7 @@
 				EB3D0FBE1C73018100C468FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB3D0FBF1C73018100C468FC /* Build configuration list for PBXNativeTarget "listsUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +520,7 @@
 				EB3D0FC11C73018100C468FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
