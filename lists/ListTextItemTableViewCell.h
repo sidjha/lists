@@ -10,6 +10,13 @@
 
 @interface ListTextItemTableViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *textItemContent;
+@property (weak, nonatomic) IBOutlet UITextView *editableText;
+
+@property (weak, nonatomic) IBOutlet UIButton *editableLocationButton;
+
+@property (weak, nonatomic) IBOutlet UILabel *rowIndicatorLabel;
+
+@property (weak, nonatomic) IBOutlet UIImageView *editableImageView;
+
 
 @end

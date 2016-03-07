@@ -18,11 +18,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.tableView.allowsSelection = NO;
+    self.navigationController.toolbarHidden = NO;
+    
+    [self.navigationController.toolbar setBarStyle:UIBarStyleBlack];
+    
+    UIBarButtonItem *newButton = [[UIBarButtonItem alloc]initWithTitle:@"Add New Item" style:UIBarButtonItemStylePlain target:self action:@selector(addNewItem:)];
+    
+    [self setToolbarItems:[NSArray arrayWithObject:newButton]];
+    
+    [self configureDataSource];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) configureDataSource {
+    
+    self.listItems = [NSMutableArray arrayWithObjects:@"Lorem lorem ipsum ipsum Lorem lorem ipsum ipsum", @"lorem lorem ipsum 2 ipsum two ipsum two", @"lorem lorem ipsum 3 ipsum three ipsum three", @"lorem lorem ipsum 4 ipsum four ipsum four", nil];
+}
+
+- (void) addNewItem:(id)sender {
+    [self.listItems addObject:[NSString stringWithFormat:@"Hello"]];
+    
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.listItems.count - 1 inSection:0];
+    [self.tableView
+     insertRowsAtIndexPaths:@[indexPath]withRowAnimation:UITableViewRowAnimationBottom];
 }
 
 #pragma mark - Table view data source
@@ -33,10 +58,10 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-    return 8;
-}
 
+    //return [self.listItems count] + 1;
+    return [self.listItems count];
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -44,10 +69,14 @@
     
     ListTextItemTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
     
-    [cell.textItemContent setText:@"Text item content text item content text item."];
+    //if (indexPath.row == [self.listItems count]) {
+    //    [cell.editableText setText:@"Add new item"];
+   // } else {
+    [cell.editableText setText:[self.listItems objectAtIndex:indexPath.row]];
+   // }
+    
     return cell;
 }
-
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath {
     //   [self performSegueWithIdentifier:@"ssegue" sender:self];

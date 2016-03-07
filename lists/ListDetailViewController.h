@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface ListDetailViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *listTitle;
-@property (weak, nonatomic) IBOutlet UILabel *listAuthor;
-@property (weak, nonatomic) IBOutlet UIButton *listSubscriberCountButton;
-@property (weak, nonatomic) IBOutlet UITableView *itemsTableView;
+@property (retain) NSMutableArray *listItems;
+
+
 
 @end
