@@ -24,14 +24,14 @@
             </objects>
             <point key="canvasLocation" x="-241.5" y="351.5"/>
         </scene>
-        <!--Lists-->
+        <!--Goodlists-->
         <scene sceneID="jEY-ME-fPz">
             <objects>
                 <tableViewController id="uAa-Km-Um8" customClass="HomeTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" id="vZM-vt-R4W">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="listCell" rowHeight="85" id="N25-2D-D6p" customClass="ListTableViewCell">
@@ -83,7 +83,7 @@
                             <outlet property="delegate" destination="uAa-Km-Um8" id="y3a-kY-aEt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Lists" id="vXd-Le-HIs">
+                    <navigationItem key="navigationItem" title="Goodlists" id="vXd-Le-HIs">
                         <barButtonItem key="rightBarButtonItem" title="New" id="lzF-fr-A7G"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -97,12 +97,12 @@
             <objects>
                 <tableViewController id="Aoj-zE-LJX" customClass="ListDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="124" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ja6-gh-OUi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="listItemCell" rowHeight="124" id="kZY-5T-QF8" customClass="ListTextItemTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="listItemCell" id="kZY-5T-QF8" customClass="ListTextItemTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="124"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kZY-5T-QF8" id="eWs-ag-fQX">
@@ -136,7 +136,7 @@
                                             <rect key="frame" x="32" y="30" width="245" height="77"/>
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="245" id="Tci-YS-mBt"/>
+                                                <constraint firstAttribute="width" constant="245" id="HnR-QD-YLX"/>
                                             </constraints>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
@@ -188,7 +188,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2sC-H3-g93"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Y28-Im-Uwm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overlay for selecting location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHw-Xj-xgl">
@@ -218,6 +218,6 @@
         <image name="randomimage" width="690" height="517"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rRw-Fx-4Uo"/>
+        <segue reference="pMW-qs-eAR"/>
     </inferredMetricsTieBreakers>
 </document>

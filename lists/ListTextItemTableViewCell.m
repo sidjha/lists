@@ -11,7 +11,17 @@
 @implementation ListTextItemTableViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageTapDetected)];
+    singleTap.numberOfTapsRequired = 1;
+    
+    self.editableImageView.userInteractionEnabled = YES;
+    [self.editableImageView addGestureRecognizer:singleTap];
+    
+}
+
+- (void) imageTapDetected {
+    NSLog(@"Tap detected.");
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

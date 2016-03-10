@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListDetailViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+@interface ListDetailViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate, UITextViewDelegate>
 
 @property (retain) NSMutableArray *listItems;
-
-
 
 @end
