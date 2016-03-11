@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListTextItemTableViewCell : UITableViewCell
+@interface ListTextItemTableViewCell : UITableViewCell <UIImagePickerControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *editableText;
 
